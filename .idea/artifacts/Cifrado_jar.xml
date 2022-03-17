@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Cifrado:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cifrado_jar</output-path>
+    <root id="archive" name="Cifrado.jar">
+      <element id="module-output" name="Cifrado" />
+    </root>
+  </artifact>
+</component>
