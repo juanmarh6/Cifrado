@@ -33,43 +33,52 @@ public class MainForm extends JFrame {
         cifrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbSuperior.setText("Texto a cifrar: ");
-                lbInferior.setText("Texto cifrado: ");
-                lbExplicar.setText("Cifrar texto");
-                sel = 1;
-                tfIntroducir.setText("");
-                tfEscribir.setText("");
+                if (sel != 1) {
+                    lbSuperior.setText("Texto a cifrar: ");
+                    lbInferior.setText("Texto cifrado: ");
+                    lbExplicar.setText("Cifrar texto");
+                    sel = 1;
+                    tfIntroducir.setText("");
+                    tfEscribir.setText("");
+                }
+
             }
         });
         descifrarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbSuperior.setText("Texto cifrado: ");
-                lbInferior.setText("Texto descifrado: ");
-                lbExplicar.setText("Descifrar texto");
-                sel = 2;
-                tfIntroducir.setText("");
-                tfEscribir.setText("");
+               if (sel != 2) {
+                   lbSuperior.setText("Texto cifrado: ");
+                   lbInferior.setText("Texto descifrado: ");
+                   lbExplicar.setText("Descifrar texto");
+                   sel = 2;
+                   tfIntroducir.setText("");
+                   tfEscribir.setText("");
+               }
             }
         });
         importarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbExplicar.setText("Introduce el nombre del .dat a importar sin extensiones");
-                lbSuperior.setText("Cifrado a importar: ");
-                sel = 3;
-                tfIntroducir.setText("");
-                tfEscribir.setText("");
+               if (sel != 3) {
+                   lbExplicar.setText("Introduce el nombre del .dat a importar sin extensiones");
+                   lbSuperior.setText("Cifrado a importar: ");
+                   sel = 3;
+                   tfIntroducir.setText("");
+                   tfEscribir.setText("");
+               }
             }
 
         });
         exportarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                lbExplicar.setText("Introduce el nombre para el cifrado: ");
-                sel  = 4;
-                tfIntroducir.setText("");
-                tfEscribir.setText("");
+                if (sel != 4) {
+                    lbExplicar.setText("Introduce el nombre para el cifrado: ");
+                    sel = 4;
+                    tfIntroducir.setText("");
+                    tfEscribir.setText("");
+                }
             }
         });
         nuevoCifradoButton.addActionListener(new ActionListener() {
